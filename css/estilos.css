@@ -1,0 +1,357 @@
+textarea{height: 150px; display: block}
+
+.rodape{color:white;}
+
+.c{margin:auto; margin-left:17px;}
+.d{margin:auto; margin-left:0px;}
+
+.rodape{color:white;}
+
+body{
+	background-color: #DCDCDC;
+	background-image: url("../img/site/fundo.jpg");
+}
+
+.c{margin:auto; margin-left:17px;}
+
+
+html {
+	
+	font-family: helvetica, colibri, tahoma, sans-serif;
+	color: #333;
+	background-position: initial initial;
+	background-repeat: initial initial;
+}
+.hr{ 
+  height: 5px;
+  color: #4682B4;
+  background-color: #4682B4;
+  border: none;
+}
+
+a{color:black;}
+
+.respostas{height: 1px; width: 642px;}
+
+.duvidas{font-weight: bold}
+
+ol{list-style-type: disc;}
+
+.logotipo img{
+	height: 30px;
+}
+
+
+
+.logotipo{
+	padding: 10px;
+	margin-right: 20px;
+}
+
+.rodape{background-color: #4682B4}
+
+.zoom{
+	overflow: hidden;
+
+}
+
+.zoom img{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.red{
+	color:red;
+}
+
+.mouse{
+	cursor: pointer;
+}
+
+body {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.link{color: blue;}
+
+.error{font-size: 13px; color:red;}
+
+.btn_voltar{
+	display: none;
+	z-index: 10;
+	position: fixed;
+	bottom: 4%;
+	right: 3%;
+	width: 60px;
+	height: 50px;
+	background-color: #4682B4;
+	border-radius: 6px;
+}
+
+.btn_voltar_link{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 55px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+[data-anime]{
+	opacity: 0;
+	transition: .3s;
+}
+
+[data-anime="left"]{
+	transform: translate3d(-80px, 0, 0);
+}
+
+[data-anime="top"]{
+	transform: translate3d(0, -80px, 0);
+}
+
+[data-anime="right"]{
+	transform: translate3d(80px, 0, 0);
+}
+
+[data-anime].animate{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+#parallax-image{
+	background-image: url("../img/site/gif_cachorro5.gif");
+	height: 700px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 350px; 
+	color:#ffff;
+	font-family: Cosmic Sans MS, Cosmic Sans, Cursive;
+	font-size: 80px;
+}
+.h1-parallax{
+	font-size: 50px;
+}
+
+#parallax-image2{
+	background-image: url("../img/site/fundo3.jpg");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 550px; 
+	color:#ffff;
+}
+
+#parallax-image3{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 650px; 
+	color:#ffff;
+}
+
+#parallax-image3333{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 1000px; 
+	color:#ffff;
+}
+
+
+#parallax-image312{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 450px; 
+	color:#ffff;
+}
+
+#parallax-image336{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 550px; 
+	color:#ffff;
+}
+#parallax-image4{
+	background-image: url("../img/site/fundo6.jpg");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 550px; 
+	color:#ffff;
+}
+
+#parallax-image5{
+	background-image: url("../img/site/fundo5.jpg");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 550px; 
+	color:#ffff;
+	font-size: 20px;
+}
+#parallax-image7{
+	background-image: url("../img/site/fundo7.jpg");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 600px; 
+	color:#ffff;
+	font-size: 20px;
+}
+.duvidas a ,ol{
+	color:white;
+	list-style-type: none;
+}
+.duvidas h1{
+	font-size: 10px;
+}
+
+#parallax-image8{
+	background-image: url("../img/site/fundo_abandonado.jpg");
+	height: 100px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 600px; 
+	color:black;
+	font-size: 20px;
+}
+
+#parallax-image9{
+	background-image: url("../img/site/fundo_adocao.jpg");
+	height: 100px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 600px; 
+	color:black;
+	font-size: 20px;
+}
+
+#parallax-image10{
+	background-image: url("../img/site/fundo_desaparecido.jpg");
+	height: 100px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 400px; 
+	color:black;
+	font-size: 20px;
+}
+
+#parallax-image31{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 600px; 
+	color:#ffff;
+}
+
+#parallax-image-redes{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 400px; 
+	color:#ffff;
+}
+
+
+#parallax-image333{
+	background-image: url("../img/site/fundo_azul.png");
+	height: 200px;
+	margin-bottom: 50px;
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 650px; 
+	color:#ffff;
+}
+
+.active{
+	background-color: green !important;
+}
+
+.sla{
+	background-image: url("../img/site/fundo.jpg");
+}
+
+.editar{
+	opacity: 0;
+}
+.editar:hover{
+	opacity: 1;
+}
