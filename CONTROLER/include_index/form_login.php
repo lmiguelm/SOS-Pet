@@ -3,12 +3,16 @@
 		<div class="row c">
 
 			<div class="col-sm-5 text-center">
-				<br><br>
+				<br><br><br><br>
 				<?php
-					echo "<br><br>";
 					if (isset($_GET["erro"])){
-						echo"<p class='text-center red'>Senha ou E-mail incorretos</p><br>";
+				?>
+					<br><br><br><br><br>
+					<p class="text-center red">Senha ou E-mail incorretos. Tente novamente.</p>
+					<button class="btn btn-success" id="button_reload" style="width: 200px;">Ok</button>
+				<?php
 					}
+
 					elseif (isset($_GET["adocao"])) {
 						$id=$_GET["id"];
 						echo"<p class='text-center red'>Primeiro entre em sua conta:</p>";
@@ -19,21 +23,25 @@
 						$parametros["action"]="validacao.php";
 					}
 				?>
-
-				<form method="POST" id="form_login" action="<?php echo $parametros["action"]?>">
-					<input type="email" name="email"  class="form-control" placeholder="E-mail" required="required"/><br>
-					<input type="password" name="senha" class="form-control" data-cript="md5, sha1" placeholder="Senha" required="required"/><br>
-
-					<button class="btn btn-success" style="width: 200px;">Entrar</button>
-				</form>
 				<br>
-				<p class='text-center'>
-					Você ainda não tem uma conta?<a style="color: red;" href='#' data-toggle="modal" data-target="#cadastro"> Registre-se aqui</a>
-				</p>
+				<?php
+					if (!isset($_GET["erro"])) {?>
 
-				<p class="text-center">
-					<a style="color:red;" href='#' data-toggle="modal" data-target="#EsqueciSenha">Esqueci minha senha</a>
-				</p>
+						<form method="POST" id="form_login" action="<?php echo $parametros["action"]?>">
+							<input type="email" name="email"  class="form-control" placeholder="E-mail" required="required"/><br>
+							<input type="password" name="senha" class="form-control" data-cript="md5, sha1" placeholder="Senha" required="required"/><br>
+
+							<button class="btn btn-success" style="width: 200px;">Entrar</button>
+						</form>
+						<br>
+						<p class='text-center'>
+							Você ainda não tem uma conta?<a style="color: red;" href='#' data-toggle="modal" data-target="#cadastro"> Registre-se aqui</a>
+						</p>
+
+						<p class="text-center">
+							<a style="color:red;" href='#' data-toggle="modal" data-target="#EsqueciSenha">Esqueci minha senha</a>
+						</p>
+				<?php } ?>
 
 				<!-- Modal -->
 				<div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

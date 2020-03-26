@@ -1,7 +1,7 @@
 <?php
 	include_once("../VIEW/classeCabecalho.php");
 
-    $bd = "mysql:host=localhost:3306;dbname=sospet;charset=utf8";
+    $bd = "mysql:host=localhost:3307;dbname=sospet;charset=utf8";
     $user = "root";
     $senha = "usbw";
 

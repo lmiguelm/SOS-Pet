@@ -1,6 +1,6 @@
 $(function(){
 
-	var url="http://localhost/TCC/CONTROLER/";
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";
 	var linhasPorPagina=4;
 	var paginaAtual=1;
 	var totalPaginas;

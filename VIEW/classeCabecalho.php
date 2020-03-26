@@ -213,7 +213,7 @@
     				$conn->set_charset("utf8");
 
 
-					  if($_SESSION["usuario"]->get_permissao()==0 ){
+					  if($_SESSION["usuario"]->get_permissao()==0  || $_SESSION["usuario"]->get_permissao()==2){
 
 					  		$sql='SELECT*FROM usuario WHERE id_usuario='.$_SESSION['usuario']->get_id().'';
 

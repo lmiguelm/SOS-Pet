@@ -1,7 +1,6 @@
 $(function(){
 
-	var url="http://localhost/TCC/CONTROLER/";
-	var tabela=$('#ta').text();
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";	var tabela=$('#ta').text();
 
 	console.log(tabela)
 

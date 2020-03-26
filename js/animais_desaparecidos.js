@@ -1,7 +1,6 @@
 $(function(){
 
-	var url="http://localhost/TCC/CONTROLER/";
-	var linhasPorPagina=8;
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";	var linhasPorPagina=8;
 	var paginaAtual=1;
 	var totalPaginas;
 	var numeroLinhas;

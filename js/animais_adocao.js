@@ -1,16 +1,17 @@
 $(function(){
 
-	var url="http://localhost/TCC/CONTROLER/";
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";
 	var linhasPorPagina=8;
 	var paginaAtual=1;
 	var totalPaginas;
 	var numeroLinhas;
 
 	function loadAnimais(){
+		
 		$("#animais").empty();
-		 $.getJSON(url + "ajax/listar.php?tabela=adocao", {linhasPorPagina: linhasPorPagina, paginaAtual: paginaAtual}).done(function(data){
-
-		 	if (data.length==0){
+		 $.getJSON(url +"ajax/listar.php?tabela=adocao", {linhasPorPagina: linhasPorPagina, paginaAtual: paginaAtual}).done(function(data){
+ 
+			if (data.length==0){
 					var $animais=$('<p>Atualmente não há animais para adoção</p>')
 					$('#comentarios').append($animais)
 			}else{
@@ -24,6 +25,7 @@ $(function(){
 				}
 			}
 		})
+		
 	}	
 
 	function gerarPaginacao(){
@@ -151,9 +153,9 @@ $(function(){
 
 	var cont=0
 	function listarAnimais(id_animal, nome, foto, data){
-
+		
 		cont++;
-
+		
 		var $animais=$('<div class="col-sm-3"><div class="card-group"><div class="card text-white bg-primary"  style="width: 50rem;"><div class="zoom"><a href="listar_animais_adocao.php?id='+id_animal+'#form_adocao"><img src="../img/animais/'+foto+'" class="card-img-top small_img" height="200" width="250" /></a></div><div class="card-body"><h5 class="card-title text-center">'+nome+'</h5><div class="text-center"></div></div></div></div>');
 
 		if (cont==3){
@@ -174,6 +176,7 @@ $(function(){
 		if (botao=='resetar'){
 			location.reload();
 		}
+
 
 
 		if(tipo==undefined){

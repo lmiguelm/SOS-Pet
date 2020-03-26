@@ -1,12 +1,10 @@
 $(function(){
 
-	var url="http://localhost/TCC/CONTROLER/";
-	
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";	
 
 	function load_meus_animais(){
 		$("#animais").empty();
 		 $.getJSON(url + "ajax/listar.php?tabela=meus_animais").done(function(data){
-
 		 	if (data.length==0){
 					var $animais=$('<p>Você não possui animais.</p>')
 					$('#comentarios').append($animais)

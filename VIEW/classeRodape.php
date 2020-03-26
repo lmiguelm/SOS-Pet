@@ -54,6 +54,8 @@
 	$parametros["scripts"][] ="../js/messages_pt_BR.js";
 	$parametros["scripts"][] ="../js/sospet.js";
 	$parametros["scripts"][] ="../js/animacao.js";
+	$parametros["scripts"][] ="../js/edicao_informacoes.js";
+
 
 	$r=New Rodape($parametros);
 	$r->exibe();

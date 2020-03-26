@@ -1,5 +1,16 @@
 <div id="parallax-image2" >
-	<h1 class=" text-center" style="font-size: 60px;"><b>Cãotribuição</b></h1>
+	<h1 class=" text-center" style="font-size: 60px;">
+
+		<?php
+		
+			if($_SESSION["usuario"]->get_permissao()==2) {
+				echo'<a class="white" href="#" id="editar_titulo_secao1"><b>Cãotribuição</b></a>';
+			}else {
+				echo'<b>Cãotribuição</b>';
+			}
+		?>
+		
+	</h1>
 	<div class="row">
 		
 		<div class="container col-sm-6 text-center" data-anime="top">

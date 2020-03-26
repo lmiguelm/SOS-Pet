@@ -9,7 +9,7 @@
 
 
 
-    if ($_SESSION["usuario"]->get_permissao()==0) {
+    if ($_SESSION["usuario"]->get_permissao()==0 || $_SESSION["usuario"]->get_permissao()==2) {
     	$tabela[]="usuario";
 		$coluna[]= "id_usuario as id";
 		$condicao[]='id_usuario='.$_SESSION["usuario"]->get_id().'';

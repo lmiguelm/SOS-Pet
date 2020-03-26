@@ -1,7 +1,6 @@
 $(function(){
 
-		var url="http://localhost/TCC/CONTROLER/";
-		
+	var url="http://localhost:8080/SOS-PET/CONTROLER/";		
 		var controleNav=false;
 		$(document).scroll(function(e){
 
@@ -164,6 +163,10 @@ $(function(){
 					email: true
 				}
 			}
+		})
+
+		$("#button_reload").click(function(){
+			window.location.href= url+"index.php#conta";
 		})
 
 		

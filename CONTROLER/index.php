@@ -1,9 +1,13 @@
+
+
 <?php
+
 	include("../VIEW/classeCabecalho.php");
 	$c->exibe_menu();
 	include("../VIEW/classeCard.php");
 	include("../VIEW/classeForm.php");
 	include("../MODEL/classeBancoDeDados.php");
+	//session_start();
 ?>
 
 <div class="col-xs-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1">
