@@ -59,6 +59,68 @@ CREATE TABLE animal(
     FOREIGN KEY(cod_voluntario) REFERENCES voluntario(id_voluntario) ON UPDATE CASCADE
 );
 
+CREATE TABLE secao1(
+	
+    id_secao1 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+CREATE TABLE secao2(
+	
+    id_secao2 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+CREATE TABLE secao3(
+	
+    id_secao3 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao4(
+	
+    id_secao4 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao5(
+	
+    id_secao5 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao6(
+	
+    id_secao6 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao7(
+	
+    id_secao6 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao8(
+	
+    id_secao8 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+CREATE TABLE secao9(
+	
+    id_secao9 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(9999) NOT NULL,
+    conteudo VARCHAR(99999) NOT NULL
+);
+
+select * from usuario;
 
 -- TRIGGERS
 

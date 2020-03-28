@@ -9,11 +9,12 @@
 
     <div id="parallax-image10">
         <div class="col-sm-5">
-            <h1 class='text-center'id="desaparecido" ><b>Seu animal desapareceu?</b></h1><br>
-            <p>Estamos ajudando pessoas a encontrarem seus animais de estimação que desapareceram. É um serviço totalmente gratuito que tem o objetivo de acabar com o sofrimento das pessoas que perderam uma parte de sua família.</p>
+            <h1 class='text-center'id="desaparecido" ><b id="dados_secao8_titulo"></b></h1><br>
+            <p id="dados_secao8_conteudo"></p>
             
 
              <?php
+             
                     if (!isset($_SESSION["usuario"])) {
                        echo "<p><a class='red' href='index.php#conta'>Faça login para Anunciar um animal</a></p>";
                     }

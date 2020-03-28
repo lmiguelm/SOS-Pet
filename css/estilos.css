@@ -358,3 +358,7 @@ body {
 .white{
 	color: white;
 }
+.editar-texto{
+	color:yellow;]
+	cursor: pointer;
+}

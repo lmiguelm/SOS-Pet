@@ -9,9 +9,8 @@
 
     <div id="parallax-image9">
         <div class="col-sm-5">
-            <h1 class='text-center' id="adocao"><b>Adoção</b></h1><br/>
-            <p>A adoção de animais não é só para quem quer chegar em casa e ser recebido com amor, carinho e felicidade por um bichinho fofinho. Ela exige responsabilidade e empatia por quem proporciona essa recepção calorosa depois de um longo dia de trabalho, estresse e preocupações, os animais de estimação - mas que também exigem cuidados nas horas difíceis como em casos de doenças.</p><br>
-
+            <h1 class='text-center' id="adocao"><b id="dados_secao7_titulo"></b></h1><br/>
+            <p id="dados_secao7_conteudo"></p>
              <?php
                     if (!isset($_SESSION["usuario"])) {
                        echo "<p><a class='red' href='index.php#conta'>Faça login para cadastrar um animal na adoção</a></p>";
