@@ -2,49 +2,15 @@
 <div id="parallax-image8">
 
 	<div class="col-xs-6 col-sm-6  col-md-6  text-center">
-		<?php
-
-			if (isset($_SESSION["usuario"]) && $_SESSION["usuario"]->get_permissao()==2) {
-
-				echo
-				'
-					<h1 id="abandonado" style="font-size: 50px;"><span id="dados_secao6_titulo"></span><i data-toggle="tooltip" title="Editar" data-original-title="Editar" class="material-icons editar-texto mouse" data-toggle="modal" data-target="#muda_dados_secao6">edit</i></h1>
-
-					<div class="modal fade" id="muda_dados_secao6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
-							<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-								<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-
-							<form>
-								<div class="modal-body">
-									<input type="text" required="required" name="tituloSecao6" id="tituloSecao6" required="required" placeholder="Insira o novo titulo" class="form-control"/><br>
-									<textarea class="form-control" name="conteudoSecao6" id="conteudoSecao6" placeholder="Informe o novo conteudo"></textarea>
-								</div>
-
-								<div class="modal-footer">
-									<button type="reset" class="btn btn-secondary" >Apagar</button>
-									<button type="button" value="6" class="btn btn-primary alterarSecao">Salvar mudanças</button>
-								</div>
-							</form>
-							</div>
-						</div>
-					</div>
-				';
-			}
-			else {
-				echo'<h1 id="abandonado" style="font-size: 50px;"><span id="dados_secao6_titulo"></span></h1>';
-			}
-		?>
+		<h1 id="abandonado" style="font-size: 50px;">Abandonado</h1>
 	</div>
 
 	<div class="col-xs-6 col-sm-6  col-md-6" data-anime="right"><br><br><br>
 		<div class="container">
-	        <p id="dados_secao6_conteudo"></p>
-	        <br>
+			<p>
+				De acordo com a Organização Mundial da Saúde, há cerca de 30 milhões de animais abandonados no Brasil. Destes, 20 milhões são cachorros, enquanto 10 milhões são gatos. Para você ter ideia, em 2010, o continente inteiro da Oceania tinha cerca de 36 milhões de pessoas. E isso são números referentes a 2014, é muito provável que a situação esteja até pior.
+			</p>
+			<br>
 	    </div>
 	    <?php 
 	    	if (!isset($_SESSION["usuario"])) {

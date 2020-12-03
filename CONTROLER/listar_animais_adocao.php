@@ -9,8 +9,8 @@
 
     <div id="parallax-image9">
         <div class="col-sm-5">
-            <h1 class='text-center' id="adocao"><b id="dados_secao7_titulo"></b></h1><br/>
-            <p id="dados_secao7_conteudo"></p>
+            <h1 class='text-center' id="adocao">Adoção</h1><br/>
+            <p>Clique no botão abaixo, cadastre seu animal para que seja divulgado em nosso site.</p>
              <?php
                     if (!isset($_SESSION["usuario"])) {
                        echo "<p><a class='red' href='index.php#conta'>Faça login para cadastrar um animal na adoção</a></p>";

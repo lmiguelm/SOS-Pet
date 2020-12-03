@@ -9,8 +9,8 @@
 
     <div id="parallax-image10">
         <div class="col-sm-5">
-            <h1 class='text-center'id="desaparecido" ><b id="dados_secao8_titulo"></b></h1><br>
-            <p id="dados_secao8_conteudo"></p>
+            <h1 class='text-center'id="desaparecido" >Seu animal desapareceu?</h1><br>
+           
             
 
              <?php

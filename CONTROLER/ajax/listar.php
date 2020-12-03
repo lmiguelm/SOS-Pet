@@ -23,7 +23,7 @@
     $host = "localhost";
     $db   = "sospet";
     $user = "root";
-    $pass = "usbw";
+    $pass = "";
     $conn = new mysqli($host, $user, $pass, $db); 
     $conn->set_charset("utf8");
 
