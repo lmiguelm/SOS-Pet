@@ -1,6 +1,6 @@
 $(function () {
 
-	var url = "http://localhost/SOS-PET/CONTROLER/";
+	var url = "https://sospet-application-php.herokuapp.com/CONTROLER/";
 	var controleNav = false;
 	$(document).scroll(function (e) {
 

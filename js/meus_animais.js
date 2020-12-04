@@ -1,6 +1,6 @@
 $(function () {
 
-	var url = "http://localhost/SOS-PET/CONTROLER/";
+	var url = "https://sospet-application-php.herokuapp.com/CONTROLER/";
 
 	function load_meus_animais() {
 		$("#animais").empty();

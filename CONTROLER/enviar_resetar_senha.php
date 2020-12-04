@@ -30,7 +30,7 @@
 		
 		$subject = "Você solicitou o reset de senha";
 		$mensagem = "Você solicitou um reset de senha.<br /><br />
-		<a href='http://localhost/TCC/CONTROLER/resetar_senha.php?email=".$_POST["email"]."&codigo_alteracao=$chave'>Clique aqui</a> para resetar sua senha.";
+		<a href='https://sospet-application-php.herokuapp.com/CONTROLER/resetar_senha.php?email=".$_POST["email"]."&codigo_alteracao=$chave'>Clique aqui</a> para resetar sua senha.";
 		
 		include("email.php");
 		

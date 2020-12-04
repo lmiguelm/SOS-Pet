@@ -73,7 +73,7 @@
 	$(function(){
 
 
-		var url="http://localhost/TCC/CONTROLER/";
+		var url="https://sospet-application-php.herokuapp.com/CONTROLER/";
 
 		$('.scroll').click(function(event){
 			event.preventDefault();

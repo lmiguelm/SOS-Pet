@@ -1,6 +1,6 @@
 $(function () {
 
-	var url = "http://localhost/SOS-PET/CONTROLER/";
+	var url = "https://sospet-application-php.herokuapp.com/CONTROLER/";
 	var linhasPorPagina = 8;
 	var paginaAtual = 1;
 	var totalPaginas;

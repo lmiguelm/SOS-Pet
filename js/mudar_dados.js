@@ -1,6 +1,6 @@
 $(function () {
 
-	var url = "http://localhost/SOS-PET/CONTROLER/"; var tabela = $('#ta').text();
+	var url = "https://sospet-application-php.herokuapp.com/CONTROLER/"; var tabela = $('#ta').text();
 
 	console.log(tabela)
 
