@@ -20,10 +20,10 @@
 
 
     //conectando ao bd.
-    $host = "localhost";
-    $db   = "sospet";
-    $user = "root";
-    $pass = "";
+    $host = "host=us-cdbr-east-02.cleardb.com";
+    $db   = "heroku_bb3563937d246b4";
+    $user = "ba3534f19130d4";
+    $pass = "9df3a70e";
     $conn = new mysqli($host, $user, $pass, $db); 
     $conn->set_charset("utf8");
 
