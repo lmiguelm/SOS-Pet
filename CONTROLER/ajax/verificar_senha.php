@@ -4,7 +4,7 @@
 
 	$id=$_GET["id"];
     
-    $host = "host=us-cdbr-east-02.cleardb.com";
+    $host = "us-cdbr-east-02.cleardb.com";
     $db   = "heroku_bb3563937d246b4";
     $user = "ba3534f19130d4";
     $pass = "9df3a70e";
