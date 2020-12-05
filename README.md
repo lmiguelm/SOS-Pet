@@ -12,4 +12,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 📝 Licença
-Esse projeto está sob a licença MIT. Veja o arquivo  [LICENSE](https://github.com/lmiguelm/SOS-Pet/LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo  [LICENSE](https://github.com/lmiguelm/SOS-Pet/blob/master/LICENSE.md) para mais detalhes.
