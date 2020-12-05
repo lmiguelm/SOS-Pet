@@ -30,7 +30,12 @@
     
     //recendo a tabela para fazer o select.
     $tabela=$_GET["tabela"];
-    $id_usuario=$_SESSION["usuario"]->get_id();
+
+    if(isset($_SESSION["usuario"])) {
+
+        $id_usuario=$_SESSION["usuario"]->get_id();
+    }
+
 
     
     if ($tabela=='meus_animais') {
@@ -346,12 +351,13 @@
              $sql.=" WHERE (cod_usuario_anuncia=$id_usuario OR cod_usuario_adota=$id_usuario OR (cod_usuario_cadastra=$id_usuario && status='Adoção'))";
         }
     }
-    if ($cont==false && $tabela=='adocao') {
-        $sql.=" WHERE cod_usuario_cadastra!=$id_usuario";
-        $cont=true;
-    }elseif($cont==true && $tabela='adocao'){
-        $sql.=" AND  cod_usuario_cadastra!=$id_usuario";
-    }
+    // if ($cont==false && $tabela=='adocao') {
+    //     $sql.=" WHERE cod_usuario_cadastra!=$id_usuario";
+    //     $cont=true;
+    // }
+    // }elseif($cont==true && $tabela='adocao'){
+    //     $sql.=" AND  cod_usuario_cadastra!=$id_usuario";
+    // }
     if($tabela!='meus_animais') {
         $sql.=" LIMIT $offset, $linhasPorPagina";
     }else{
@@ -363,7 +369,7 @@
             $sql.=" AND (cod_usuario_anuncia=$id_usuario OR cod_usuario_adota=$id_usuario OR (cod_usuario_cadastra=$id_usuario && status='Adoção'))";
         }
     }
-
+    // print $sql;
     $result = $conn->query($sql);
     $outp = array();
     $outp = $result->fetch_all(MYSQLI_ASSOC);
